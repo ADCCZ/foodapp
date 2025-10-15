@@ -18,6 +18,13 @@ class Router
                 $controller->about();
                 break;
 
+            case 'test-db':
+                require_once __DIR__ . '/../controllers/TestController.php';
+                $controller = new TestController();
+                $controller->db();
+                break;
+
+
             default:
                 http_response_code(404);
                 echo "<h2>404 – stránka nenalezena</h2>";
