@@ -16,6 +16,15 @@
                 <li class="nav-item"><a class="nav-link" href="/foodapp/public/home">Domů</a></li>
                 <li class="nav-item"><a class="nav-link" href="/foodapp/public/about">O projektu</a></li>
             </ul>
+            <ul class="navbar-nav ms-auto">
+                <?php if (!empty($_SESSION['user'])): ?>
+                    <li class="nav-item"><span class="nav-link">👤 <?= htmlspecialchars($_SESSION['user']['login']) ?></span></li>
+                    <li class="nav-item"><a class="nav-link" href="/foodapp/public/logout">Odhlásit</a></li>
+                <?php else: ?>
+                    <li class="nav-item"><a class="nav-link" href="/foodapp/public/login">Přihlášení</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/foodapp/public/register">Registrace</a></li>
+                <?php endif; ?>
+            </ul>
         </div>
     </div>
 </nav>
