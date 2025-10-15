@@ -1,0 +1,30 @@
+{
+  "name": "foodapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass public/src/main.scss public/css/main.css --no-source-map",
+    "watch": "sass --watch public/src/main.scss:public/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ADCCZ/foodapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ADCCZ/foodapp/issues"
+  },
+  "homepage": "https://github.com/ADCCZ/foodapp#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}
